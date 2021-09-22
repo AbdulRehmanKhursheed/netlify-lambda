@@ -19,7 +19,7 @@ exports.handler = async function (event, context, callback) {
   } else {
     callback(null, {
       statusCode: 500,
-      body: "Some error occured. ",
+      body: "Some error occured with server.  ",
     });
   }
 };
