@@ -29,7 +29,7 @@ exports.handler = async function (event, context, callback) {
   else if(event.httpMethod == "DELETE") {
     callback(null, {
       statusCode: 200,
-      body: "This was a DELETE  request ",
+      body: "This was new  DELETE  request ",
     });
   }
 };
