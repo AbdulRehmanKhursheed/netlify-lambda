@@ -32,4 +32,10 @@ exports.handler = async function (event, context, callback) {
       body: "This was new  DELETE  request ",
     });
   }
+  else  {
+    callback(null, {
+      statusCode: 500,
+      body: "Some error occured in server.",
+    });
+  }
 };
