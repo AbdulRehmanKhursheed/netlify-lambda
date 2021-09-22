@@ -1,16 +1,28 @@
 {
-  "name": "netlify_aws_lambda",
+  "name": "netlify-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is demo or netlify (locally)",
   "main": "index.js",
   "scripts": {
     "prod": "npm run build; npm run build:lambda",
     "lambda-serve": "netlify-lambda serve functions",
     "lambda-build": "netlify-lambda build functions"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammedahsanau/Netlify-Demo.git"
+  },
+  "keywords": [
+    "netlify",
+    "lambda",
+    "locally"
+  ],
+  "author": "Muhammad Ahsan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammedahsanau/Netlify-Demo/issues"
+  },
+  "homepage": "https://github.com/muhammedahsanau/Netlify-Demo#readme",
   "dependencies": {
     "axios": "^0.21.4",
     "netlify-lambda": "^2.0.14"
