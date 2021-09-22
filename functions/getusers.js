@@ -10,24 +10,15 @@ exports.handler = async function (event, context, callback) {
         data: data.data,
       }),
     });
-  } else if (event.httpMethod == "POST") {
+  } if (event.httpMethod == "POST") {
     callback(null, {
       statusCode: 200,
       body: JSON.stringify({
         msg: "This was a POST request",
       }),
     });
-  } else if (event.httpMethod == "PUT") {
-    callback(null, {
-      statusCode: 500,
-      body: "This was a  PUT request ",
-    });
-  } else if (event.httpMethod == "DELETE") {
-    callback(null, {
-      statusCode: 200,
-      body: "This was new ones DELETE  request ",
-    });
-  } else {
+  } 
+   else {
     callback(null, {
       statusCode: 500,
       body: "Some error occured in server.",
