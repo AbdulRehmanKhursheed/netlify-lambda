@@ -6,7 +6,7 @@ exports.handler = async function (event, context, callback) {
     callback(null, {
       statusCode: 200,
       body: JSON.stringify({
-        msg: "Following is the api response from the public animal names apis ",
+        msg: "Following is the api response from the public animal names api`s ",
         data: data.data,
       }),
     });
