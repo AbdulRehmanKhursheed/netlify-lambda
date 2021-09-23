@@ -14,7 +14,7 @@ exports.handler = async function (event, context, callback) {
     callback(null, {
       statusCode: 200,
       body: JSON.stringify({
-        msg: "This was a POST request ..",
+        msg: "This was a POST request . .",
       }),
     });
   } 
